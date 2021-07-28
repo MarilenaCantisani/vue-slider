@@ -31,6 +31,14 @@
                 <div id="carousel" class="col-8">
                     <img class="img-fluid" v-for="(image, index) in images" :src="image" :class="isActiveImage(index)"
                         alt="">
+                    <div id="slider-selector" class="row">
+
+                        <div class="col dot-selector mx-2"></div>
+                        <div class="col dot-selector mx-2"></div>
+                        <div class="col dot-selector mx-2"></div>
+                        <div class="col dot-selector dot-active mx-2"></div>
+
+                    </div>
                 </div>
                 <!-- * Right column img * -->
                 <div class="col-2">

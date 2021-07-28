@@ -1,5 +1,12 @@
+/* * Cursos style * */
 .clickable-element {
     cursor: pointer;
+}
+
+/* *  Position carousel section * */
+#carousel {
+    position: relative;
+
 }
 
 /* * Properties to make the image visible according to the index * */
@@ -8,4 +15,25 @@
 }
 #carousel img.active {
     display: inline-block;
+}
+
+/* * Slider selector style * */
+#slider-selector {
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 28px;
+    padding: 10px 20px;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#slider-selector > .dot-selector {
+   padding: 10px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+#slider-selector > .dot-selector.dot-active {
+    background-color: blue;
 }
