@@ -32,6 +32,9 @@ const root = new Vue({
         decreaseIndex() {
             this.currentIndex = this.currentIndex === 0 ? this.currentIndex = this.images.length - 1 : this.currentIndex - 1;
         },
+        setUpCurrentIndex(index) {
+            this.currentIndex = index;
+        }
     }
 
 }

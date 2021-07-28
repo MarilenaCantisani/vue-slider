@@ -33,7 +33,7 @@
                         alt="">
                     <div id="slider-selector" class="row">
                         <div v-for="(dot, index) in images" :src="dot" :class="isActiveImage(index)"
-                            class="col dot-selector mx-2  clickable-element"></div>
+                            class="col dot-selector mx-2  clickable-element" @click="setUpCurrentIndex(index)"></div>
                     </div>
                 </div>
                 <!-- * Right column img * -->
