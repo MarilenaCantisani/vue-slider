@@ -34,6 +34,6 @@
     background-color: white;
 }
 
-#slider-selector > .dot-selector.dot-active {
+#slider-selector .active {
     background-color: blue;
 }
