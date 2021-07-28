@@ -9,7 +9,7 @@ const root = new Vue({
     /* ---------------------------------- DATA ---------------------------------- */
     data: {
         //* Array of images for the carousel
-        image: [
+        images: [
             "./images/image1.jpg",
             "./images/image2.jpg",
             "./images/image3.jpg",
@@ -24,7 +24,16 @@ const root = new Vue({
         isActiveImage(index) {
             return this.currentIndex === index ? "active" : "";
         },
-
+        //* Function that increases the index to scroll to the next image
+        increaseIndex() {
+            this.currentIndex = this.currentIndex < this.images.length - 1 ? this.currentIndex + 1 : 0;
+        },
+        //* Function that decreases the index to scroll to the previous image
+        decreaseIndex() {
+            this.currentIndex = this.currentIndex === 0 ? this.currentIndex = this.images.length - 1 : this.currentIndex - 1;
+        },
     }
+
 }
+
 );
