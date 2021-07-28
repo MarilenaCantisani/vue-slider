@@ -34,9 +34,7 @@ const root = new Vue({
         },
         setUpCurrentIndex(index) {
             this.currentIndex = index;
-        }
+        },
     }
-
 }
-
 );
