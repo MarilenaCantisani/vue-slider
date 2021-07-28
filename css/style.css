@@ -1,0 +1,11 @@
+.clickable-element {
+    cursor: pointer;
+}
+
+/* * Properties to make the image visible according to the index * */
+#carousel img {
+    display: none;
+}
+#carousel img.active {
+    display: inline-block;
+}
